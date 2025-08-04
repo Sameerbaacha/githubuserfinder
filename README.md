@@ -23,6 +23,4 @@ This is a simple and responsive web app that allows users to search for GitHub p
 
 ## 🚀 How to Run Locally
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/github-user-finder.git
+1. Clone the repo:https://github.com/Sameerbaacha/githubuserfinder.git

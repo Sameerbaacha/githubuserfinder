@@ -14,7 +14,7 @@ async function getGitHubUsername() {
                 return alert("❌ User not found.");
             }
             const data = await res.json()
-            console.log(data)
+            // console.log(data)
             document.getElementById('avatar').src = data.avatar_url || 'https://static.vecteezy.com/system/resources/previews/048/926/084/non_2x/silver-membership-icon-default-avatar-profile-icon-membership-icon-social-media-user-image-illustration-vector.jpg';
             document.getElementById('name').innerText = data.login || "No Name";
             document.getElementById('type').innerText = data.user_view_type || "Account Type Not  Available";

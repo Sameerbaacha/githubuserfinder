@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('image/Box@1x-5.0s-1366px-641px.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    background-color: #f0f1f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.title h1 {
+    color: whitesmoke;
+}
+
+.title img {
+    width: 120px;
+    background-color: white;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 0px !important;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    /* max-width: 00px; */
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    /* padding-bottom: 10px !important; */
+}
+
+.search-input {
+    padding: 6px 26px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: rgb(95, 94, 94);
+}
+
+.search-input::placeholder {
+    color: rgb(207, 207, 205);
+}
+
+.search-input:focus {
+    border: 2px solid #facc15;
+    color: wheat
+}
+
+.search-icon {
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: relative;
+    right: 30px;
+
+}
+
+.card {
+    background-color: #0e0d0d;
+    width: 400px;
+    /* height: 100%; */
+    padding: 50px 20px;
+    border-radius: 16px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* margin: 12px 0px; */
+    position: relative;
+}
+
+.pro {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #facc15;
+    color: #000;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* Profile image */
+.image img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 4px solid #facc15;
+    /* margin-bottom: 15px; */
+    margin-top: 1rem;
+    transition: transform 0.3s;
+}
+
+.image img:hover {
+    transform: scale(1.10);
+}
+
+
+.image h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: wheat;
+    /* margin-bottom: 5px; */
+}
+
+.image h4 {
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+    padding-top: 6px;
+    /* margin: 4px 0; */
+}
+
+
+.image p {
+    font-size: 16px;
+    padding-top: 10px;
+    word-wrap: break-word;
+    color: #c2c4c7;
+
+}
+
+/* Info section */
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 18px 0;
+    text-align: center;
+    border-top: 2px solid #facc15;
+    border-bottom: 2px solid #facc15;
+}
+
+.info-data h3 {
+    font-size: 16px !important;
+    color: wheat !important;
+}
+
+.info-data p {
+    font-size: 18px !important;
+    font-weight: bold;
+    color: #c2c4c7;
+    margin-top: 1rem !important;
+}
+
+#url a {
+    color: wheat;
+    /* ya koi bhi color, jaise blue, #ff6600, etc */
+    text-decoration: none;
+}
+
+.created_p {
+    font-size: 18px !important;
+    margin-top: 20px !important;
+    text-align: center !important;
+    color: wheat !important;
+    font-weight: bold;
+}
+
+#created_at {
+    font-size: 14px !important;
+    color: #c2c4c7 !important;
+
+}
+
+@media screen and (max-width: 572px) {
+    body {
+        display: flex;
+        /* ✅ missing */
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100dvh;
+        padding: 20px 10px;
+        margin: 0;
+        overflow-x: hidden;
+        /* ✅ in case horizontal scroll */
+    }
+
+    .card {
+        margin-top: 60px;
+        /* 100px zyada lag raha tha */
+    }
+
+    .search-container {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 16px !important;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .card {
+        margin: 40px auto 0 auto;
+        padding: 50px;
+        width: 100%;
+        max-width: 100%;
+
+    }
+    .title{
+        display: block;
+        display: flex;
+        margin-bottom: 0px !important;
+        margin-top: 2rem;
+    }
+    .title img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+}

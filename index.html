@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Card</title>
+    <link rel="icon" type="image/png" href="./image/39adf6b9-dde9-4b34-ab4b-43db7a45f82c_removalai_preview.png">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <img src="./image/39adf6b9-dde9-4b34-ab4b-43db7a45f82c_removalai_preview.png" alt="">
+            <h1>Github Info Card</h1>
+        </div>
+        <div class="card">
+            <h3 class="pro">Pro</h3>
+            <div class="search-container">
+                <input type="text" placeholder="github user.." class="search-input" value="" />
+                <button class="search-icon" onclick="getGitHubUsername()">&#128269;</button>
+            </div>
+            <div class="image">
+                <img src="
+                    https://static.vecteezy.com/system/resources/previews/048/926/084/non_2x/silver-membership-icon-default-avatar-profile-icon-membership-icon-social-media-user-image-illustration-vector.jpg"
+                    alt="Profile Picture" id="avatar" />
+                <h2>Name : <span id="name">---</span></h2>
+                <h4>Account Type : <span id="type">----</span></h4>
+                <h4>Bio : <span id="bio">---</span></h4>
+                <h4>User Type : <sapn id="usertype">---</span></h4>
+                <h4>Location : <span id="location">---</span></h4>
+                <p id="url">Url: <a href="#" target="_blank" id="Url">link</a></p>
+            </div>
+
+
+
+            <div class="info">
+                <div class="info-data">
+                    <h3>Repos</h3>
+                    <p id="repos">0</p>
+                </div>
+                <div class="info-data">
+                    <h3>Followers</h3>
+                    <p id="followers">0</p>
+                </div>
+                <div class="info-data">
+                    <h3>Following</h3>
+                    <p id="following">0</p>
+                </div>
+            </div>
+
+            <p class="created_p">Joined: <span id="created_at">---</span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
